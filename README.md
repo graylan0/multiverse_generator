@@ -31,7 +31,4 @@ This project is a standard Python package and can be installed via `pip`. View b
 
 
 
-![image](https://github.com/graylan0/twitch_time/assets/34530588/db694b4a-8322-4070-9c1f-a7b6d71a07f3)
-
-
 
