@@ -81,12 +81,6 @@ class StoryGenerator:
         )
         return next_narration
 
-    @sync_to_async
-    def generate_image_prompt(self):
-        """Generates a prompt for DALL-E based on the current scene"""
-        # Use the last narration result as the scene description
-        scene_description = self.past_story_entries[-1].narration_result
-        return scene_description
 
     def reset(self):
         self.past_story_entries = TriDeque(self.MAX_PAST_ENTRIES)  # Reset it before calling construct_initial_prompt
