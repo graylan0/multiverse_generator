@@ -13,7 +13,7 @@ This project is a standard Python package and can be installed via `pip`. View b
 
 ### Windows
 
-1. Set up a virtual environment:
+1. Set up a virtual environment and naviate to the directoy wtih the code after opening an anconda prompt:
    ```
    download and install anaconda then open an anaconda terminal window with anaconda prompt
    ```
