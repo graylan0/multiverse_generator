@@ -107,24 +107,11 @@ class LlmGame:
     """
     def __init__(self, hooks: LlmGameHooks = LlmGameHooks()):
         # other initializations...
-        self.vote_start_time = None
-        self.vote_duration = timedelta(minutes=5)  # 5 minutes voting time, adjust as needed
         self.character_memory = CharacterMemory()  # Create a CharacterMemory object
         self.generator = StoryGenerator(self.character_memory)  # Pass it to the StoryGenerator
         self.background_task = None
         self.hooks = hooks
         self.proposals = []
-        self.count_votes_event = asyncio.Event()
-
-    def start_vote(self):
-        self.vote_start_time = datetime.now()
-
-    def calculate_remaining_time(self):
-        if self.vote_start_time is None:
-            return None
-        elapsed_time = datetime.now() - self.vote_start_time
-        remaining_time = self.vote_duration - elapsed_time
-        return max(remaining_time.total_seconds(), 0)  # return 0 if the time is up        
 
     @property
     def initial_story_message(self) -> str:
@@ -136,31 +123,6 @@ class LlmGame:
         """
         assert self.generator.past_story_entries
         return self.generator.past_story_entries[-1].narration_result
-
-    def vote(self, proposal_id: int, weight: int = 1) -> Proposal:
-        """
-        Adds a vote to a proposal.
-
-        Args:
-            proposal_id: The id of the proposal to be voted.
-            weight: The weight of the vote (defaults to 1).
-
-        Returns:
-            The proposal object that was voted on.
-        """
-        if not 0 < proposal_id <= len(self.proposals):
-            raise ValueError(f'Invalid proposal id: {proposal_id}')
-        self.proposals[proposal_id - 1].vote += weight
-        return self.proposals[proposal_id - 1]
-
-    def end_vote(self):
-        """Ends the voting process by setting the count_votes_event."""
-        self.count_votes_event.set()
-
-    def restart(self):
-        """Restarts the game by resetting the story generator and initializing a new turn."""
-        self.generator = StoryGenerator()
-        self._new_turn()
 
     def add_proposal(self, story_action: str, author: str) -> int:
         """
@@ -186,10 +148,6 @@ class LlmGame:
         A private asynchronous method which handles the collection of
         the votes after the time limit has elapsed
         """
-        print('Waiting for votes...')
-        with suppress(asyncio.TimeoutError):
-            await asyncio.wait_for(self.count_votes_event.wait(), config.vote_delay)
-        print('Waiting complete!')
 
         proposal = max(self.proposals, key=lambda x: x.vote)
         proposal_id = self.proposals.index(proposal)
@@ -205,4 +163,3 @@ class LlmGame:
         """Initializes a new turn within the game"""
         self.proposals = []
         self.background_task = None
-        self.count_votes_event.clear()
