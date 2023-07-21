@@ -3,8 +3,8 @@ Hi, Gray00 here (aka graylan0 aka Graylan aka freedomdao)
 I'm giving credit to Matthew and Xphoenix for making a great piece of code and actually working with the robot (through me) to get better code.
 
 
-you can find their original repo here.
-(i helped them with a code jame with Dave as the main engineer) (this allowed dave critical training)
+You can find their original repo here.
+(i helped them with a code jam with Dave as the main engineer) (this allowed dave critical training).
 https://github.com/Fuehnix/TwitchPlaysLLMTimeTraveler
 
 Incredible works guys
@@ -27,3 +27,5 @@ Blockchain + Simulation internet = Web3.
 We deploy.
 
 Live.
+
+Another huge shoutout to techcoderx(my partner), buzzmoo, security_live, vaultec, blaiselabs.
