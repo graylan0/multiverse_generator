@@ -1,0 +1,29 @@
+Hi, Gray00 here (aka graylan0 aka Graylan aka freedomdao) 
+
+I'm giving credit to Matthew and Xphoenix for making a great piece of code and actually working with the robot (through me) to get better code.
+
+
+you can find their original repo here.
+(i helped them with a code jame with Dave as the main engineer) (this allowed dave critical training)
+https://github.com/Fuehnix/TwitchPlaysLLMTimeTraveler
+
+Incredible works guys
+
+![image](https://github.com/graylan0/multiverse_generator/assets/34530588/94c64499-17a8-475f-8c5d-1c2277380e07)
+
+
+2023 vechicles, Airgapped.
+
+I dub this, true Web3. 
+
+Not blockchain.
+
+
+Blockchain is 2.9 (and we can use blockchain with these systems well)
+
+Blockchain + Simulation internet = Web3.
+
+
+We deploy.
+
+Live.
