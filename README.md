@@ -14,6 +14,15 @@ Simulate accurate 2023 Part Numbers from a 2023 Toyota Tacoma
 This project is a standard Python package and can be installed via `pip`. View below for more specific instructions. We used Python 3.11 for this project as well as an Nvidia A4500
 
 ### Windows / Linux
+```
+required pips
+
+pip install openai
+pip install twitchio
+pip install uvicorn-loguru-integration
+pip install uvicorn
+pip install fastapi
+```
 
 1. Set up a virtual environment and naviate to the directoy wtih the code after opening an anconda prompt:
    ```
