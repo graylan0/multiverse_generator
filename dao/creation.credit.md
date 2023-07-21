@@ -31,6 +31,6 @@ Live.
 Another huge shoutout to techcoderx(my partner), buzzmoo, security_live, vaultec, blaiselabs.
 
 
-Lastly. Recently Kevin Mitnick passed away. I have to say. Without Kevin #hackerdao may have never formed this reality would only exist in other multiverses.
+Lastly. Recently Kevin Mitnick passed away. I have to say. Without Kevin #hackerdao may have never formed and this reality would only exist in other multiverses.
 
 Thank you Kevin; Rest Easy <3
