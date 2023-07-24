@@ -31,7 +31,7 @@ pip install fastapi
 
 2. Install the package in editable mode with development dependencies:
    ```powershell
-   pip install -e ".[dev]"  # Install the local folder as a Python package
+   pip install -e ".[dev]"
    ```
 
 3. Run the executable:
