@@ -36,7 +36,7 @@ pip install fastapi
 
 3. Run the executable:
    ```powershell
-   # 
+   
    twitch-plays-llm run
    ```
 
