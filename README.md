@@ -36,7 +36,7 @@ pip install fastapi
 
 3. Run the executable:
    ```powershell
-   # Make sure to run beforehand: .venv\Scripts\activate
+   # 
    twitch-plays-llm run
    ```
 
