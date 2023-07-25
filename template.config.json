@@ -1,0 +1,10 @@
+{
+    "twitch": {
+        "clientkey":"oauth:keyhere",
+        "hostchannel":"freedomdao",
+        "username":"freedomdaollm"
+    },
+    "openai": {
+        "api_key": "keyhere"
+    }
+}
