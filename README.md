@@ -26,6 +26,8 @@ pip install fastapi
 
 1. Set up a virtual environment and naviate to the directoy wtih the code after opening an anconda prompt:
    ```
+   https://www.anaconda.com/download
+   https://www.youtube.com/watch?v=YJC6ldI3hWk
    download and install anaconda then open an anaconda terminal window with anaconda prompt
    ```
 
@@ -33,8 +35,13 @@ pip install fastapi
    ```powershell
    pip install -e ".[dev]"
    ```
+3. Rename template.config.json to config.json and grab a twitch 0auth token as well as OpenaiAPI key using the processes below to fill in the config.json file:
+   
+   https://twitchtokengenerator.com/ get token here for twitch
 
-3. Run the executable:
+   https://platform.openai.com/account/api-keys get api keys for openai here
+
+5. Run the executable:
    ```powershell
    
    twitch-plays-llm run
