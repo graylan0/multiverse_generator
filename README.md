@@ -48,8 +48,6 @@ pip install fastapi
 
    (Challenge, Simulate ToxicToast location) 
    ```
-      (Challenge, Simulate ToxicToast location) 
-
 
 
 
