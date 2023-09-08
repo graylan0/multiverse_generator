@@ -45,7 +45,10 @@ pip install fastapi
    ```powershell
    
    twitch-plays-llm run
+
+   (Challenge, Simulate ToxicToast location) 
    ```
+      (Challenge, Simulate ToxicToast location) 
 
 
 
