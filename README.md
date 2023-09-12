@@ -46,7 +46,7 @@ pip install fastapi
    
    twitch-plays-llm run
 
-   (Challenge, Simulate ToxicToast location) 
+
    ```
 
 
